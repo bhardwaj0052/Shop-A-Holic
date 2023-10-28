@@ -2,50 +2,57 @@ package com.example.shop_a_holic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    Button categories,notification,account,cart;
+public class cart extends AppCompatActivity {
+    Button categories,notification,account,home,grocery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cart);
+        grocery=findViewById(R.id.btn2);
         categories=findViewById(R.id.cat);
         notification=findViewById(R.id.noti);
         account=findViewById(R.id.acc);
-        cart=findViewById(R.id.cart);
+        home=findViewById(R.id.home);
         categories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(MainActivity.this, categories.class);
+                Intent i= new Intent(cart.this, categories.class);
                 startActivity(i);
             }
         });
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent j= new Intent(MainActivity.this, account.class);
+                Intent j= new Intent(cart.this, account.class);
                 startActivity(j);
             }
         });
         notification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent k= new Intent(MainActivity.this, notification.class);
+                Intent k= new Intent(cart.this, notification.class);
                 startActivity(k);
             }
         });
-        cart.setOnClickListener(new View.OnClickListener() {
+       home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent l=new Intent(MainActivity.this, cart.class);
+                Intent l=new Intent(cart.this, MainActivity.class);
                 startActivity(l);
             }
         });
+       grocery.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent m=new Intent(cart.this, grocery.class);
+               startActivity(m);
+           }
+       });
     }
 }

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:background="#F4E8E8"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".cart">
     <Button
         android:id="@+id/home"
         android:layout_width="83dp"
@@ -40,14 +39,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
+        android:drawableTop="@drawable/ic_baseline_notifications_none_24"
         android:id="@+id/noti"
         android:layout_width="82.2dp"
         android:layout_height="62dp"
         android:background="@drawable/react"
-        android:drawableTop="@drawable/ic_baseline_notifications_none_24"
+        android:textAllCaps="false"
         android:paddingTop="10sp"
         android:text="Notifications"
-        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -87,50 +86,82 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <SearchView
-        android:layout_width="410dp"
-        android:layout_height="48dp"
-        android:background="#7A7575"
-        android:backgroundTint="#FFFFFF"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="412dp"
+        android:layout_height="115dp"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="409dp"
-        android:layout_height="48dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/aclonica"
-            android:text="Shop-A-Holic"
-            android:textColor="#911AB3"
-            android:textSize="20sp"
+            android:text="My Cart"
+            android:textAllCaps="false"
+            android:textColor="#504C4C"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="206dp"
+            android:layout_height="54dp"
+            android:background="@color/white"
+            android:text="Electronics"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.523" />
+            app:layout_constraintVertical_bias="0.983" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="33dp"
-            android:layout_height="38dp"
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="206dp"
+            android:layout_height="54dp"
+            android:background="@color/white"
+            android:text="Grocery"
+            android:textAllCaps="false"
+            android:textColor="#0049FA"
+            android:textSize="25sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/gg" />
+            app:layout_constraintVertical_bias="0.983" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="224dp"
+        android:layout_height="93dp"
+        android:text="No item found"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.189" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
