@@ -15,6 +15,20 @@
         android:theme="@style/Theme.ShopAHolic"
         tools:targetApi="31">
         <activity
+            android:name=".Order"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Addcart"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".grocery"
             android:exported="false">
             <meta-data

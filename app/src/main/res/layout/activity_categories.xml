@@ -3,7 +3,88 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#F4E8E8"
     android:layout_height="match_parent"
     tools:context=".categories">
+    <Button
+        android:id="@+id/home"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:background="@drawable/react"
+        android:drawableTop="@drawable/ic_baseline_home_24"
+        android:paddingTop="10sp"
+        android:text="Home"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:drawableTop="@drawable/ic_baseline_category_24"
+        android:id="@+id/cat"
+        android:layout_width="82.2sp"
+        android:layout_height="62dp"
+        android:background="@drawable/react"
+        android:textAllCaps="false"
+        android:paddingTop="10sp"
+        android:text="Categories"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/noti"
+        android:layout_width="82.2dp"
+        android:layout_height="62dp"
+        android:background="@drawable/react"
+        android:drawableTop="@drawable/ic_baseline_notifications_none_24"
+        android:paddingTop="10sp"
+        android:text="Notifications"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:drawableTop="@drawable/ic_baseline_account_circle_24"
+        android:id="@+id/acc"
+        android:layout_width="82.2dp"
+        android:layout_height="62dp"
+        android:background="@drawable/react"
+        android:textAllCaps="false"
+        android:paddingTop="10sp"
+        android:text="Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:drawableTop="@drawable/ic_baseline_shopping_cart_24"
+        android:id="@+id/cart"
+        android:layout_width="82.2dp"
+        android:layout_height="62dp"
+        android:background="@drawable/react"
+        android:textAllCaps="false"
+        android:paddingTop="10sp"
+        android:text="Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

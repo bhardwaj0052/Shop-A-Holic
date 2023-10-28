@@ -9,12 +9,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button categories,notification,account,cart;
+    Button categories,notification,account,cart,exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        exit=findViewById(R.id.exit);
         categories=findViewById(R.id.cat);
         notification=findViewById(R.id.noti);
         account=findViewById(R.id.acc);
@@ -45,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent l=new Intent(MainActivity.this, cart.class);
                 startActivity(l);
+            }
+        });
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishAffinity();
             }
         });
     }

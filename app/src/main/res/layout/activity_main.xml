@@ -132,5 +132,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/gg" />
+
+        <Button
+            android:id="@+id/exit"
+            android:drawableEnd="@drawable/ic_baseline_exit_to_app_24"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="88dp"
+            android:layout_height="40dp"
+            android:text="Exit"
+            android:paddingHorizontal="10sp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
